@@ -15,7 +15,7 @@ public class WaypointFollower : MonoBehaviour
         _waypoints = new Transform[_route.childCount];
 
         for (int i = 0; i < _route.childCount; i++)
-            _waypoints[i] = _route.GetChild(i).GetComponent<Transform>();
+            _waypoints[i] = _route.GetChild(i);
 
         _currentTargetWaypoint = _waypoints[_waypointNumber];
     }
